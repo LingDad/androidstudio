@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NumberCircleProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#CCCCCC</item>
+        <item name="progress_circle_radius">6.5dp</item>
+        <item name="progress_text_size">0sp</item>
+        <item name="progress_text_color">#000000</item>
+        <item name="progress_fill_mode">rotate</item>
+	</style>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#e5e5e5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:layout_weight="1.2"
+        android:background="#e5e5e5"
+        android:orientation="vertical">
+    </LinearLayout>
+    
+    <RelativeLayout
+        style="@style/layout_vertical"
+        android:background="#e5e5e5"
+        android:layout_weight="5">     
+           
+        <TextView 
+            android:id="@+id/title_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:textSize="28dp"
+            android:textColor="#080808"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"/>
+        
+        <TextView 
+            android:id="@+id/subtitle_show"
+            android:layout_below="@id/title_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text=""
+            android:textSize="13.5dp"
+            android:textColor="#080808"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        style="@style/layout_vertical"
+        android:background="#e5e5e5"
+        android:layout_weight="18">    
+        <ListView 
+            android:id="@+id/list_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@null">
+            
+        </ListView>
+        <TextView
+            android:id="@+id/nonet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无网络连接"
+            android:textSize="28dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    
+</LinearLayout>
